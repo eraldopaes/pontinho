@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.odlare.ponto">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="Temos Djogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".TelaDeEntradaActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TelaInicialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TelaDeCadastroActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".TelaDoJogoActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TelaDeSelecaoDeBateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PontuarJogadoresActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TelaJogadoresForaActivity"
+            android:windowSoftInputMode="stateHidden" />
+        android:screenOrientation="portrait"/>
+        <activity android:name=".TelaDeEnvioDeResultadoActivity"></activity>
+    </application>
+
+</manifest>

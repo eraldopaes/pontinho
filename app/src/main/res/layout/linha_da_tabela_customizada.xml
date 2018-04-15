@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:padding="4dp"
+    android:stretchColumns="0,1,2,3,4,5,6,7,8">
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/nome_jogador"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:maxWidth="5dp"
+            android:textColor="#000" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="5sp"
+            android:text="@null"
+            android:id="@+id/pontos_jogador"
+            android:gravity="right"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:maxWidth="5dp"
+            android:textColor="#000" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="5sp"
+            android:text="@null"
+            android:id="@+id/voltas_jogador"
+            android:gravity="right"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:maxWidth="5dp"
+            android:textColor="#000" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="5sp"
+            android:text="@null"
+            android:id="@+id/valor_voltas_jogador"
+            android:gravity="right"
+            android:ellipsize="marquee"
+            android:maxWidth="5dp"
+            android:singleLine="true" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="5sp"
+            android:text="@null"
+            android:id="@+id/valor_bates_jogador"
+            android:gravity="right"
+            android:ellipsize="marquee"
+            android:maxWidth="5dp"
+            android:singleLine="true" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="5sp"
+            android:id="@+id/pocinho_jogador"
+            android:gravity="right"
+            android:ellipsize="marquee"
+            android:maxWidth="5dp"
+            android:singleLine="true" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="5sp"
+            android:text="@null"
+            android:id="@+id/pocao_jogador"
+            android:gravity="right"
+            android:ellipsize="marquee"
+            android:maxWidth="5dp"
+            android:singleLine="true" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="5sp"
+            android:text="@null"
+            android:id="@+id/valor_partida_jogador"
+            android:gravity="right"
+            android:ellipsize="marquee"
+            android:maxWidth="5dp"
+            android:singleLine="true" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="5sp"
+            android:text="@null"
+            android:id="@+id/valor_global_jogador"
+            android:gravity="right"
+            android:maxWidth="5dp"
+            android:ellipsize="marquee"
+            android:singleLine="true" />
+    </TableRow>
+</TableLayout>

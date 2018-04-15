@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.odlare.ponto.TelaDoJogoActivity"
+    android:background="#EEEEEE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/botaoAdicionarJogador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/adicionar_jogador_ao_jogo"
+                android:background="#42A5F5"
+                android:layout_marginRight="5dp" />
+
+            <Button
+                android:id="@+id/botaoRemoverJogador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/remover_jogador_ao_jogo"
+                android:background="#EF5350"
+                android:layout_marginLeft="5dp" />
+
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spnOpcoesJogadores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BDBDBD"
+            android:layout_marginTop="10dp"
+            android:spinnerMode="dialog" />
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="4dp"
+        android:stretchColumns="0,1,2,3,4,5,6,7,8">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/nome_jogador"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:maxWidth="5dp"
+                android:text="@string/nome_do_jogador"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/pontos_jogador"
+                android:layout_width="5sp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:maxWidth="5dp"
+                android:text="@string/pontos_jogador"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/voltas_jogador"
+                android:layout_width="5sp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:maxWidth="5dp"
+                android:text="@string/voltas_jogador"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/valor_voltas_jogador"
+                android:layout_width="5sp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:maxWidth="5dp"
+                android:text="@string/valor_voltas_jogador"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/valor_bates_jogador"
+                android:layout_width="5sp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:maxWidth="5dp"
+                android:text="@string/bates_jogador"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/pocinho_jogador"
+                android:layout_width="5sp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:maxWidth="5dp"
+                android:text="@string/pocinho_jogador"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/pocao_jogador"
+                android:layout_width="5sp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:maxWidth="5dp"
+                android:text="@string/pocao_jogador"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/valor_partida_jogador"
+                android:layout_width="5sp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:maxWidth="5dp"
+                android:text="@string/partida_atual_jogador"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/valor_global_jogador"
+                android:layout_width="5sp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:maxWidth="5dp"
+                android:text="@string/partida_geral_jogador"
+                android:textColor="#000" />
+        </TableRow>
+
+    </TableLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ListView
+            android:id="@+id/lista_dos_jogadores_na_mesa"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listaVazia"
+            android:text="Esperando as estrelas"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:typeface="serif"
+            android:textSize="20sp"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <RadioGroup
+            android:id="@+id/pocinhoOpcoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/acumula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Pocinho acumula" />
+
+            <RadioButton
+                android:id="@+id/naoAcumula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pocinho Não acumula"
+                android:checked="false" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnValorJogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.82"
+            android:background="#42A5F5"
+            android:text="@string/btn_ok" />
+
+        <EditText
+            android:id="@+id/edtValorDoJogo"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="digite valor"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pontuarRodada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.91"
+            android:background="#81C784"
+            android:text="@string/pontuar_rodada" />
+
+        <RadioGroup
+            android:id="@+id/tipoDeBate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/bateSimples"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Simples" />
+
+            <RadioButton
+                android:id="@+id/bateDeDez"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="De dez" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Ponto</string>
+    <string name="jogar">Jogar</string>
+    <string name="cadastrar_jogador">Cadastrar Jogador</string>
+    <string name="nome_do_jogador">Nome</string>
+    <string name="telefone_do_jogador">Telefone</string>
+
+    <string name="adicionar_jogador_ao_jogo">Adicionar</string>
+    <string name="remover_jogador_ao_jogo">Remover</string>
+    <string name="btn_ok">Iniciar</string>
+    <string name="pontuar_rodada">Pontuar</string>
+
+    <string name="pontos_jogador">Pts</string>
+    <string name="voltas_jogador">V</string>
+    <string name="valor_voltas_jogador">VV</string>
+    <string name="bates_jogador">B</string>
+    <string name="pocinho_jogador">p</string>
+    <string name="pocao_jogador">P</string>
+    <string name="partida_atual_jogador">P(a)</string>
+    <string name="partida_geral_jogador">P(g)</string>
+
+
+    <string-array name="lista_opcoes_tela_inicial">
+        <item>Tabela do jogo</item>
+        <item>Cadastrar jogador</item>
+        <item>Enviar resultado (Finalização)</item>
+        <item>Resultados (Jogadores que deram saída)</item>
+        <item>Sair</item>
+    </string-array>
+</resources>
